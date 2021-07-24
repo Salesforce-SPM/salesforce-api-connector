@@ -48,8 +48,10 @@
     "type": "git",
     "url": "git+https://github.com/Salesforce-SPM/salesforce-api-connector.git"
   },
-  "scripts": {
-    "test": "echo \"no test\" && exit 1"
-  },
-  "version": "1.0.0"
+  "scripts": {},
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^16.4.1",
+    "typescript": "^4.3.5"
+  }
 }
