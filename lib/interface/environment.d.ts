@@ -1,9 +1,10 @@
+export interface EnvironmentFile {
+    name?: string;
+    url?: string;
+    user?: string;
+    password?: string;
+    token?: string;
+}
 export interface EnvironmentArgs {
-    data?: {
-        name?: string;
-        url?: string;
-        user?: string;
-        password?: string;
-        token?: string;
-    };
+    data?: EnvironmentFile;
 }
