@@ -42,13 +42,16 @@
     "environment"
   ],
   "license": "ISC",
-  "main": "index.js",
+  "main": "lib/index.js",
   "name": "salesforce-api-connector",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Salesforce-SPM/salesforce-api-connector.git"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
   "version": "1.0.0",
   "devDependencies": {
     "@types/node": "^16.4.1",
