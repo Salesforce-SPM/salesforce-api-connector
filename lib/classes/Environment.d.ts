@@ -1,5 +1,6 @@
 import * as Interface from '../interface';
 export declare class Environment {
+    accessToken: string;
     private file;
     constructor(args?: Interface.Environment.EnvironmentArgs);
     get name(): string;
@@ -12,4 +13,9 @@ export declare class Environment {
     set password(password: string);
     get token(): string;
     set token(token: string);
+    get clientId(): string;
+    set clientId(clientId: string);
+    get clientSecret(): string;
+    set clientSecret(clientSecret: string);
+    getOauth2AccessToken(): Promise<void>;
 }
